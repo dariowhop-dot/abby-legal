@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--
+  DRAFT - needs legal review before launch
+  File: privacy.html
+  Last updated: 8 November 2026
+  Placeholders the operator must replace before launch (all shown in [square brackets] on the page):
+   - [COMPANY LEGAL NAME]
+   - [COMPANY ADDRESS]
+   - [HOSTING / DATABASE / STORAGE PROVIDER]
+   - [HOSTING REGION / COUNTRY]
+   - privacy@abby.fitness and support@abby.fitness (confirm mailboxes exist)
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy | Abby</title>
+<meta name="description" content="How Abby collects, uses and protects your data, including scan photos, AI processing, and your rights to export or delete everything.">
+<meta name="theme-color" content="#fbf6ee">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6ee;--sand:#f3e8d8;--blush:#f1dccd;--ink:#2a1f1a;--mute:#6f6050;--line:rgba(90,60,25,.16);--bronze:#b8924a;--bronze-d:#8a6828;--dark:#241a14;--gold:linear-gradient(135deg,#ecd49c 0%,#caa55d 48%,#a8803a 100%);--serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;--sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased;font-size:16px;display:flex;flex-direction:column;min-height:100vh}
+a{color:var(--bronze-d);text-decoration:underline;text-underline-offset:3px}
+a:hover{color:var(--ink)}
+:focus-visible{outline:2px solid var(--bronze-d);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;z-index:10}
+.skip:focus{left:12px}
+.wrap{max-width:820px;margin:0 auto;padding:0 24px;width:100%}
+header.site{border-bottom:1px solid var(--line);background:rgba(251,246,238,.92)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:1080px}
+.logo{font-family:var(--serif);font-weight:500;font-size:32px;letter-spacing:.02em;line-height:1;color:var(--ink);text-decoration:none}
+.back{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);text-decoration:none}
+.back:hover{color:var(--ink)}
+main{flex:1;padding:56px 0 72px}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze-d);font-weight:500}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;line-height:1.1}
+h1{font-size:clamp(40px,7vw,64px);margin:14px 0 10px}
+h2{font-size:clamp(28px,4.5vw,36px);margin:48px 0 12px;padding-top:6px}
+h3{font-size:22px;margin:24px 0 6px}
+.updated{color:var(--mute);font-size:14px;margin-bottom:24px}
+.lede{font-size:18px;font-weight:300;color:#4b3e33;max-width:640px}
+p,ul,ol,dl{margin:0 0 14px}
+ul,ol{padding-left:22px}
+li{margin-bottom:6px}
+.box{background:#fff;border-radius:18px;padding:22px 24px;margin:26px 0;box-shadow:0 30px 60px -40px rgba(42,31,26,.35),0 0 0 1px rgba(42,31,26,.06);border-left:4px solid var(--bronze)}
+.box h2{margin:0 0 8px;padding:0;font-size:26px}
+.box ul{margin-bottom:0}
+.note{background:var(--sand);border-radius:14px;padding:16px 20px;margin:20px 0}
+.ph{background:#fff3c9;border:1px dashed var(--bronze-d);border-radius:4px;padding:0 4px;font-weight:500;color:var(--ink)}
+.toc{background:var(--sand);border-radius:14px;padding:16px 22px;margin:22px 0;font-size:15px}
+.toc ol{columns:2;column-gap:28px;margin:6px 0 0}
+.tw{overflow-x:auto;margin:16px 0 22px;border-radius:14px;box-shadow:0 0 0 1px var(--line)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px;background:#fff}
+th,td{text-align:left;vertical-align:top;padding:11px 14px;border-bottom:1px solid var(--line)}
+th{background:var(--sand);font-weight:600;font-size:13px;letter-spacing:.04em}
+tr:last-child td{border-bottom:0}
+details{background:#fff;border-radius:14px;margin:10px 0;box-shadow:0 0 0 1px var(--line)}
+summary{cursor:pointer;padding:15px 20px;font-weight:500;list-style-position:inside}
+details>div{padding:0 20px 8px}
+footer.site{background:var(--dark);color:rgba(251,246,238,.7);padding:32px 0 44px;font-size:14px}
+footer.site .wrap{max-width:1080px;display:flex;flex-wrap:wrap;gap:18px 40px;justify-content:space-between;align-items:flex-start}
+footer.site .logo{color:var(--bg)}
+footer.site a{color:rgba(251,246,238,.85)}
+footer.site a:hover{color:#fff}
+footer.site nav{display:flex;gap:22px;flex-wrap:wrap}
+footer.site small{display:block;margin-top:8px;font-size:12px;color:rgba(251,246,238,.5);max-width:420px;line-height:1.6}
+@media(max-width:620px){.wrap{padding:0 20px}main{padding:36px 0 56px}.toc ol{columns:1}header.site .wrap{height:60px}.logo{font-size:28px}}
+@media print{header.site,footer.site{display:none}body{background:#fff}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+  <a class="logo" href="https://abby.fitness" aria-label="Abby home">Abby</a>
+  <a class="back" href="https://abby.fitness">&larr; abby.fitness</a>
+</div></header>
+<main id="main"><div class="wrap">
+<p class="eyebrow">Abby</p>
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: 8 November 2026</p>
+<p class="lede">What we collect, why we collect it, and the control you have over it. Written in plain English.</p>
+
+<div class="box" role="region" aria-labelledby="sum"><h2 id="sum">Summary</h2>
+<ul>
+<li>Abby is an iPhone app for women aged 18 and over, focused on the abs.</li>
+<li>Your scan photo is sent securely to our AI provider, Anthropic, to produce your result. Location and camera metadata are removed first, and the original is deleted right after analysis.</li>
+<li>We keep a copy of your photo only if you choose &ldquo;keep my photos to track progress&rdquo;. It is encrypted and private, and you can delete it at any time.</li>
+<li>Rep counting runs on your phone. Your workout video is never recorded or uploaded.</li>
+<li>No advertising, no tracking across other apps or sites, and we never sell your data. Your photos are never used to train AI.</li>
+<li>You can export your data or delete your whole account in the app: Profile &gt; Privacy.</li>
+</ul></div>
+<nav class="toc" aria-label="Contents"><strong>Contents</strong><ol>
+<li><a href="#who">Who we are</a></li><li><a href="#collect">What we collect and why</a></li><li><a href="#photos">Your photos</a></li><li><a href="#ai">AI processing</a></li><li><a href="#sharing">Who we share data with</a></li><li><a href="#transfers">International transfers</a></li><li><a href="#retention">How long we keep data</a></li><li><a href="#security">Security</a></li><li><a href="#rights">Your rights</a></li><li><a href="#children">Children</a></li><li><a href="#changes">Changes</a></li><li><a href="#contact">Contact</a></li></ol></nav>
+
+<h2 id="who">1. Who we are</h2>
+<p>Abby (the iPhone app) and abby.fitness (our website) are provided by Dario Bek, based in the United Kingdom (&ldquo;Abby&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). We are the controller of the personal data described in this policy. You can reach our privacy team at <a href="mailto:privacy@abby.fitness">privacy@abby.fitness</a>.</p>
+<p>This policy explains what we collect when you use the app, why, who helps us process it, and the choices you have. It is written to be read, so we have kept it plain.</p>
+
+<h2 id="collect">2. What we collect and why</h2>
+<p>We collect only what the app needs to work. Some of it you give us directly, some is created as you use Abby.</p>
+<div class="tw"><table>
+<thead><tr><th scope="col">Data</th><th scope="col">Purpose</th><th scope="col">Legal basis (UK/EU GDPR)</th></tr></thead>
+<tbody>
+<tr><td>First name (optional, you can add or change it in your profile)</td><td>Address you in the app</td><td>Contract (providing the app)</td></tr>
+<tr><td>Anonymous device account</td><td>The app creates an account for your iPhone without asking for an email or password. It uses a random secret stored in your iPhone Keychain; our server keeps only a one-way hash of it, not the secret itself. This lets your data stay linked to your phone</td><td>Contract (providing the app)</td></tr>
+<tr><td>Email address (only if you write to us, or join the website waitlist)</td><td>Reply to support or privacy requests; tell you when the app opens on your platform. The app itself does not ask for your email</td><td>Legitimate interests; your consent for the waitlist</td></tr>
+<tr><td>Date of birth</td><td>Confirm you are 18 or over (checked in onboarding and again on our server)</td><td>Legal obligation and legitimate interests (keeping the service adults-only)</td></tr>
+<tr><td>Height, weight, goals, training level, schedule</td><td>Personalise your plan and workouts. Weight is used only for personalisation and is never shown to you as a target</td><td>Contract</td></tr>
+<tr><td>Health limits you choose to tell us (for example injuries, recent abdominal surgery, postpartum status)</td><td>Adjust or restrict exercises so your plan is suitable. Providing this is optional</td><td>Your explicit consent (special-category data)</td></tr>
+<tr><td>Scan photo</td><td>AI ab scan: core type, focus area and, if you unlock it, the full breakdown, Abby Score and plan</td><td>Your explicit consent (the photo may reveal health-related information)</td></tr>
+<tr><td>Scan results and scores</td><td>Show your results, build your plan, track change over time</td><td>Contract; explicit consent where the results relate to health</td></tr>
+<tr><td>Progress photos (only if you opt in)</td><td>Side-by-side progress views</td><td>Your explicit consent</td></tr>
+<tr><td>Workout logs (reps, sets, time)</td><td>Show progress, streaks and milestones, adapt your plan</td><td>Contract</td></tr>
+<tr><td>Device push token</td><td>Deliver reminder notifications you have allowed</td><td>Consent (you can switch notifications off in iPhone Settings)</td></tr>
+<tr><td>Purchase status</td><td>Know whether you have an active subscription or a guest scan so we can unlock the right features. We do not receive your card details; Apple handles payment</td><td>Contract; legal obligation for billing records</td></tr>
+<tr><td>Support messages</td><td>Answer your questions and keep a record of the conversation</td><td>Legitimate interests (helping our users); contract</td></tr>
+<tr><td>Anonymous usage analytics (only if you opt in)</td><td>Understand which features are used so we can improve the app. No photos, health answers or name are included</td><td>Your consent</td></tr>
+</tbody></table></div>
+<p>If you are in a region where these legal bases do not apply, we process the same data for the same purposes under the laws that apply to you.</p>
+<p>We do not use advertising, we do not track you across other apps or websites, we do not sell your personal data, and we never use your data for ads.</p>
+<h3>Rep counting uses your camera, on your phone</h3>
+<p>When you choose automatic rep counting, pose detection runs on your phone. Your workout video is never recorded, stored or uploaded. Only the resulting counts (reps, sets, time) are saved to your workout log.</p>
+
+<h2 id="photos">3. Your photos</h2>
+<ul>
+<li><strong>Scan photo.</strong> You take one front photo of your midsection. It is sent securely to our AI provider to produce your result.</li>
+<li><strong>Metadata removed.</strong> EXIF and location metadata are stripped from the photo.</li>
+<li><strong>Original deleted.</strong> The original photo is deleted right after analysis.</li>
+<li><strong>Kept only if you choose.</strong> A re-encoded copy is stored only if you choose &ldquo;keep my photos to track progress&rdquo;. It is encrypted, private, and only you can view it.</li>
+<li><strong>You are in control.</strong> You can delete any scan or photo at any time in the app. Stored photos are removed after 365 days at most.</li>
+<li><strong>Never used to train AI.</strong> Your photos are not used to train AI models, ours or anyone else&rsquo;s.</li>
+</ul>
+
+<h2 id="ai">4. AI processing</h2>
+<p>To analyse your scan photo we use Claude, a vision model made by Anthropic. Your photo (with metadata removed) is sent to Anthropic over an encrypted connection for the sole purpose of producing your result, and the result is returned to us. Anthropic acts as our service provider for this purpose.</p>
+<p>The result is visual guidance generated by an AI. It is not a medical assessment, not a diagnosis, and not a measurement of body composition or health. AI output can be imperfect, and you can rescan or contact us if something looks off. We do not use your scan to make decisions that have legal or similarly significant effects on you.</p>
+
+<h2 id="sharing">5. Who we share data with</h2>
+<p>We share data only with service providers who help us run Abby, and only what each one needs. They may use it only to provide their service to us.</p>
+<div class="tw"><table>
+<thead><tr><th scope="col">Provider</th><th scope="col">What they do</th></tr></thead>
+<tbody>
+<tr><td>Anthropic</td><td>AI analysis of scan photos</td></tr>
+<tr><td>Apple and RevenueCat</td><td>Subscriptions and in-app purchases, and confirming your purchase status</td></tr>
+<tr><td>Resend</td><td>Sending the confirmation email when you join the waitlist on abby.fitness (website only, not the app)</td></tr>
+<tr><td>Supabase</td><td>Cloud hosting, database and encrypted object storage</td></tr>
+<tr><td>Expo</td><td>Delivering push notifications</td></tr>
+<tr><td>PostHog</td><td>Optional anonymous analytics, only if you opt in</td></tr>
+</tbody></table></div>
+<p>We may also disclose information if the law requires it, to protect people&rsquo;s safety or our rights, or as part of a business transfer (in which case this policy would continue to protect your data or we would tell you first). We do not sell your personal data and we do not share it for advertising.</p>
+
+<h2 id="transfers">6. International transfers</h2>
+<p>Some of our providers are located in, or process data in, countries other than your own, which may have different data protection rules. Where we transfer personal data internationally, we do so using safeguards recognised by applicable law, such as the UK International Data Transfer Addendum or the EU Standard Contractual Clauses, or an adequacy decision where one exists. Our main hosting location is Frankfurt, Germany (EU). You can contact us at <a href="mailto:privacy@abby.fitness">privacy@abby.fitness</a> for more information about these safeguards.</p>
+
+<h2 id="retention">7. How long we keep data</h2>
+<ul>
+<li><strong>Account data</strong> (profile, scan results, workout logs): until you delete your account.</li>
+<li><strong>Photos:</strong> the scan original is deleted right after analysis. Photos you chose to keep are removed when you delete them, when you delete your account, or after 365 days at most.</li>
+<li><strong>Backups:</strong> deleted data is purged from backups within 30 days of deletion.</li>
+<li><strong>Billing records:</strong> kept for as long as the law requires. These are held by Apple and our payment tools, and we keep only what we need to show your purchase status.</li>
+<li><strong>Support messages:</strong> kept while we help you and for a reasonable period afterwards, or until you ask us to delete them, unless we must keep them by law.</li>
+</ul>
+
+<h2 id="security">8. Security</h2>
+<p>We protect your data with encryption in transit. Sensitive fields (such as your health answers and weight) are encrypted at rest, and stored photos are encrypted and private to your account. Access to personal data is limited to what is needed to run the service. No system is completely secure, so we cannot promise absolute security, but we work to keep your information safe and will tell you and the relevant authorities about a data breach where the law requires it.</p>
+
+<h2 id="rights">9. Your rights and how to use them</h2>
+<p>Depending on where you live (for example under the UK GDPR, the EU GDPR, or California&rsquo;s CCPA/CPRA), you may have the right to:</p>
+<ul>
+<li>access your data and receive a copy (export);</li>
+<li>correct data that is wrong or out of date;</li>
+<li>delete your data;</li>
+<li>withdraw consent at any time (this does not affect what we did before you withdrew);</li>
+<li>object to or ask us to restrict certain processing, and, where it applies, receive your data in a portable format;</li>
+<li>not be discriminated against for using your privacy rights.</li>
+</ul>
+<h3>How to do it</h3>
+<ul>
+<li><strong>Export your data:</strong> in the app, go to Profile &gt; Privacy.</li>
+<li><strong>Correct your details:</strong> edit your profile in the app, or email us.</li>
+<li><strong>Withdraw a consent:</strong> in the app under Profile &gt; Privacy (for example analytics, keeping photos), or by email.</li>
+<li><strong>Delete a scan or photo:</strong> in the app, on the scan or photo itself.</li>
+<li><strong>Delete your whole account and all photos:</strong> Profile &gt; Privacy &gt; Delete account.</li>
+<li><strong>Anything else:</strong> email <a href="mailto:privacy@abby.fitness">privacy@abby.fitness</a>. We will reply within one month, or tell you if we need longer as the law allows. We may need to confirm it is you first.</li>
+</ul>
+<p><strong>Deleting your account does not cancel your subscription.</strong> Cancel it in iPhone Settings &gt; Apple ID &gt; Subscriptions. See our <a href="terms.html">Terms of Use</a> and <a href="support.html">Support</a> page.</p>
+<p>If you are unhappy with how we handle your data, please talk to us first, and you also have the right to complain to your data protection regulator (for example the Information Commissioner&rsquo;s Office in the UK, or your local EU supervisory authority). California residents: we do not sell or share personal information as those terms are defined under the CCPA.</p>
+
+<h2 id="children">10. Children</h2>
+<p>Abby is for adults aged 18 and over only. We check your date of birth in onboarding and again on our server. We do not knowingly collect data from anyone under 18. If you think someone under 18 has an account, please email <a href="mailto:privacy@abby.fitness">privacy@abby.fitness</a> and we will delete it.</p>
+
+<h2 id="changes">11. Changes to this policy</h2>
+<p>We may update this policy from time to time. We will change the &ldquo;Last updated&rdquo; date above, and if a change is significant we will tell you in the app or by email. Where the law requires your consent for a new use of your data, we will ask for it.</p>
+
+<h2 id="contact">12. Contact</h2>
+<p>Dario Bek<br>United Kingdom<br>Privacy: <a href="mailto:privacy@abby.fitness">privacy@abby.fitness</a><br>General help: <a href="mailto:support@abby.fitness">support@abby.fitness</a></p>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <div><div class="logo">Abby</div><small>Abby is not a medical service and does not give medical advice. &copy; 2026 Abby &middot; abby.fitness</small></div>
+  <nav aria-label="Legal and support"><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="support.html">Support</a></nav>
+</div></footer>
+</body>
+</html>
